@@ -29,4 +29,4 @@ ec2.describeAccountAttributes({}).promise().then(
 
 ```
 
-(credit https://github.com/jonasfj who may not want credit not sure)
+Credit: https://github.com/aws/aws-sdk-js/issues/13#issuecomment-11868232
