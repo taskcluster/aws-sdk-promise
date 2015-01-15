@@ -22,9 +22,9 @@
   },
   "homepage": "https://github.com/lightsofapollo/aws-sdk-promise",
   "peerDependencies": {
-    "aws-sdk": ">= 2.0.0-rc9"
+    "aws-sdk": ">= 2.1.5"
   },
   "dependencies": {
-    "promise": "~4.0.0"
+    "promise": "^6.1.0"
   }
 }
