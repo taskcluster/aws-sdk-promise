@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-promise",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Hack for adding the .promise() method to all aws-sdk request objects (aws-sdk is a peerDependency)",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,9 @@
   },
   "homepage": "https://github.com/lightsofapollo/aws-sdk-promise",
   "peerDependencies": {
-    "aws-sdk": ">= 2.0.0-rc9"
+    "aws-sdk": ">= 2.1.5"
   },
   "dependencies": {
-    "promise": "~4.0.0"
+    "promise": "^6.1.0"
   }
 }
