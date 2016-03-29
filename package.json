@@ -16,7 +16,7 @@
     "promise"
   ],
   "author": "James Lal [:lightsofapollo]",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/taskcluster/aws-sdk-promise/issues"
   },
