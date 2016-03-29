@@ -1,14 +1,14 @@
 {
   "name": "aws-sdk-promise",
-  "version": "0.0.2",
-  "description": "Hack for adding the .promise() method to all aws-sdk request objects (aws-sdk is a peerDependency)",
+  "version": "0.1.0",
+  "description": "Hack for adding the .promise() method to all aws-sdk request objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/lightsofapollo/aws-sdk-promise.git"
+    "url": "git://github.com/taskcluster/aws-sdk-promise.git"
   },
   "keywords": [
     "aws",
@@ -18,13 +18,11 @@
   "author": "James Lal [:lightsofapollo]",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lightsofapollo/aws-sdk-promise/issues"
+    "url": "https://github.com/taskcluster/aws-sdk-promise/issues"
   },
-  "homepage": "https://github.com/lightsofapollo/aws-sdk-promise",
-  "peerDependencies": {
-    "aws-sdk": ">= 2.1.5"
-  },
+  "homepage": "https://github.com/taskcluster/aws-sdk-promise",
   "dependencies": {
-    "promise": "^6.1.0"
+    "promise": "^6.1.0",
+    "aws-sdk": "^2.1.5"
   }
 }
