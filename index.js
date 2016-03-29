@@ -5,17 +5,16 @@ var Promise = require('promise');
 // XXX: This is a terrible hack but it should not break anything in horrible
 // ways.
 aws.Request.prototype.promise = function() {
-  var that = this;
   return new Promise(function(accept, reject) {
-    that.on('complete', function(response) {
+    this.on('complete', function(response) {
       if (response.error) {
         reject(response.error);
       } else {
         accept(response);
       }
     });
-    that.send();
-  });
+    this.send();
+  }.bind(this));
 };
 
 module.exports = aws;
