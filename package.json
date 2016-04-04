@@ -4,7 +4,7 @@
   "description": "Hack for adding the .promise() method to all aws-sdk request objects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,11 @@
     "url": "https://github.com/taskcluster/aws-sdk-promise/issues"
   },
   "homepage": "https://github.com/taskcluster/aws-sdk-promise",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "must": "^0.13.1",
+    "rewire": "^2.5.1"
+  },
   "dependencies": {
     "promise": "^6.1.0",
     "aws-sdk": "^2.1.5"
