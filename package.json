@@ -1,6 +1,6 @@
 {
   "name": "aws-sdk-promise",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Hack for adding the .promise() method to all aws-sdk request objects",
   "main": "index.js",
   "scripts": {
