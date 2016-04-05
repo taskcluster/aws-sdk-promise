@@ -5,7 +5,7 @@ var aws = require('aws-sdk');
 // ways.
 aws.Request.prototype.promise = function() {
   var that = this;
-  var Prom = aws.Promise || require('promise');
+  var Prom = aws.Promise || Promise || require('promise');
   return new Prom(function(accept, reject) {
     that.on('complete', function(response) {
       if (response.error) {
