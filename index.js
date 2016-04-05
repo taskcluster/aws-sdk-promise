@@ -17,6 +17,10 @@ aws.Request.prototype.promise = function() {
   }.bind(this));
 };
 
-aws.Promise = undefined;
+if (aws.Promise) {
+  throw new Error('Refusing to overwrite aws library property');
+} else {
+  aws.Promise = undefined;
+}
 
 module.exports = aws;
