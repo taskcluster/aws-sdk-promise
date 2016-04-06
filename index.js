@@ -4,7 +4,7 @@ var aws = require('aws-sdk');
 // XXX: This is a terrible hack but it should not break anything in horrible
 // ways.
 aws.Request.prototype.promise = function() {
-  var Prom = aws.Promise || Promise || require('promise');
+  var Prom = aws.Promise || global.Promise || window.Promise || require('promise');
   return new Prom(function(accept, reject) {
     this.on('complete', function(response) {
       if (response.error) {
